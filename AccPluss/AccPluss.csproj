@@ -67,6 +67,10 @@
     <Compile Include="Migrations\201903122346146_CreatefirtsEntity.Designer.cs">
       <DependentUpon>201903122346146_CreatefirtsEntity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903132323484_ModifyClient.cs" />
+    <Compile Include="Migrations\201903132323484_ModifyClient.Designer.cs">
+      <DependentUpon>201903132323484_ModifyClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,6 +79,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903122346146_CreatefirtsEntity.resx">
       <DependentUpon>201903122346146_CreatefirtsEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903132323484_ModifyClient.resx">
+      <DependentUpon>201903132323484_ModifyClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
