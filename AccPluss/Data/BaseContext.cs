@@ -18,5 +18,8 @@ namespace AccPluss.Data
         }
 
         public DbSet<Client> Clients { get; set; }
+        public DbSet<Purchase> Purchases { get; set; }
+
+        public DbSet<Provider> Providers { get; set; }
     }
 }

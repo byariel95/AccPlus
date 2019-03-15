@@ -7,13 +7,13 @@ namespace AccPluss.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class ModifyClient : IMigrationMetadata
+    public sealed partial class AddEntities : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ModifyClient));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddEntities));
         
         string IMigrationMetadata.Id
         {
-            get { return "201903132323484_ModifyClient"; }
+            get { return "201903151523109_AddEntities"; }
         }
         
         string IMigrationMetadata.Source

@@ -57,19 +57,18 @@
   <ItemGroup>
     <Compile Include="Data\BaseContext.cs" />
     <Compile Include="Data\Entities\Client.cs" />
+    <Compile Include="Data\Entities\IEntity.cs" />
+    <Compile Include="Data\Entities\Provider.cs" />
+    <Compile Include="Data\Entities\Purchase.cs" />
     <Compile Include="Forms\Principal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201903122346146_CreatefirtsEntity.cs" />
-    <Compile Include="Migrations\201903122346146_CreatefirtsEntity.Designer.cs">
-      <DependentUpon>201903122346146_CreatefirtsEntity.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201903132323484_ModifyClient.cs" />
-    <Compile Include="Migrations\201903132323484_ModifyClient.Designer.cs">
-      <DependentUpon>201903132323484_ModifyClient.cs</DependentUpon>
+    <Compile Include="Migrations\201903151523109_AddEntities.cs" />
+    <Compile Include="Migrations\201903151523109_AddEntities.Designer.cs">
+      <DependentUpon>201903151523109_AddEntities.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -77,11 +76,8 @@
     <EmbeddedResource Include="Forms\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201903122346146_CreatefirtsEntity.resx">
-      <DependentUpon>201903122346146_CreatefirtsEntity.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201903132323484_ModifyClient.resx">
-      <DependentUpon>201903132323484_ModifyClient.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201903151523109_AddEntities.resx">
+      <DependentUpon>201903151523109_AddEntities.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,6 +102,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Data\Repositories\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
